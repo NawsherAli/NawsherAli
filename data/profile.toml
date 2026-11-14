@@ -1,0 +1,154 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  NAWSHER/OS profile configuration
+#  Change text, links, colours and stack here. Then run:
+#      python3 scripts/generate_profile_svgs.py
+#  Every fact in this file must be true and public (CV / LinkedIn).
+# ─────────────────────────────────────────────────────────────────────────────
+
+[identity]
+name        = "Nawsher Ali"
+handle      = "NawsherAli"
+prompt_user = "nawsher"
+prompt_host = "engineering"
+title       = "Senior Backend & API Architect"
+subtitle    = "PHP Laravel · Python FastAPI · Cloud Microservices · AI Integration"
+location    = "Islamabad, Pakistan"
+experience  = "Nearly 5 years"
+availability = "Open to senior backend / API / SaaS roles · remote (UK · EU · Gulf hours) or relocation"
+
+[links]
+linkedin = "https://www.linkedin.com/in/nawsher-ali-saas-architect/"
+github   = "https://github.com/NawsherAli"
+email    = "nawsherali.edu@gmail.com"
+# Personal website: intentionally empty until a personal site exists.
+# (iotaiy.com is an agency site that does not present Nawsher; see docs/maintenance.md)
+website  = ""
+
+[terminal]
+# Each entry is one command and its output in the intro terminal.
+lines = [
+  ["whoami",         "Nawsher Ali — Senior Backend & API Architect"],
+  ["cat focus.txt",  "Multi-tenant SaaS · REST APIs · AI integration & automation"],
+  ["uptime",         "nearly 5 years in production · Laravel since 2022"],
+  ["now",            "building the Mediatiz LMS — 700,000+ students & teachers"],
+]
+
+[profile]
+build = [
+  "Multi-tenant SaaS platforms",
+  "REST APIs for web & mobile",
+  "Role-based access & auth",
+  "AI features & n8n automation",
+]
+solve = [
+  "Tenant data isolation",
+  "Slow APIs & heavy queries",
+  "Legacy code → modern Laravel",
+  "Manual admin workflows",
+]
+# Career timeline (from CV). label, years, note
+timeline = [
+  ["Kreashion",  "2022",      "intern → junior backend"],
+  ["Adrem",      "2023",      "Laravel APIs · AWS"],
+  ["Migrova",    "2023–24",   "remote · Adelaide, AU"],
+  ["Mediatiz",   "2024–now",  "LMS · 700K+ users"],
+]
+
+# Static career facts shown beside live GitHub telemetry (source: CV).
+[[career_facts]]
+label = "EXPERIENCE"
+value = "~5 YRS"
+[[career_facts]]
+label = "USERS SERVED"
+value = "700K+"
+[[career_facts]]
+label = "TENANT LEVELS"
+value = "3"
+[[career_facts]]
+label = "AUTOMATED TESTS"
+value = "685"
+
+[telemetry]
+# Vanity metrics only appear once they pass these thresholds.
+show_stars_min          = 25
+show_followers_min      = 50
+show_contributions_min  = 100
+# Repos never featured or counted in language stats (still counted in "public repos").
+exclude_repos = ["shredbottle", "investo", "dezesitemagniemandzien"]
+recent_repos_max = 4
+stale_after_days = 3        # mark data as stale if the last successful sync is older
+
+# ── Technology stack (only technologies listed on the CV) ──
+[[stack]]
+group = "BACKEND"
+items = [["php","PHP 8"],["laravel","Laravel"],["python","Python"],["fastapi","FastAPI"],["nodedotjs","Node.js"]]
+[[stack]]
+group = "FRONTEND"
+items = [["vuedotjs","Vue 3"],["react","React"],["typescript","TypeScript"],["tailwindcss","Tailwind"]]
+[[stack]]
+group = "DATA & INFRA"
+items = [["mysql","MySQL"],["postgresql","PostgreSQL"],["mongodb","MongoDB"],["redis","Redis"],["aws","AWS"],["docker","Docker"]]
+[[stack]]
+group = "ARCHITECTURE"
+items = [["","REST APIs"],["","Multi-tenancy"],["","Microservices"],["","RBAC"],["","System design"]]
+[[stack]]
+group = "AI & AUTOMATION"
+items = [["","LLM APIs"],["","RAG"],["","AI agents"],["n8n","n8n"],["","Automation"]]
+[[stack]]
+group = "QUALITY & OPS"
+items = [["","PHPUnit"],["linux","Linux"],["git","Git"],["wordpress","WordPress"]]
+
+# ── Professional work (private employer systems: facts from CV only, no code) ──
+[[work]]
+id       = "mediatiz"
+name     = "MEDIATIZ LMS"
+org      = "Mediatiz Foundation · 2024–now"
+summary  = "Multi-tenant learning management SaaS in production"
+facts    = [
+  "700,000+ students & teachers",
+  "3-level tenant isolation",
+  "RBAC across 7 user tiers",
+  "4-stage payment approval flow",
+  "685-test PHPUnit suite",
+  "AI features & n8n automation",
+]
+stack    = "Laravel 12 · Vue 3 · MySQL 8 · Redis"
+[[work]]
+id       = "migrova"
+name     = "MIGROVA PORTAL"
+org      = "Migrova · Adelaide, AU · 2023–24 · remote"
+summary  = "Marketplace linking migrants with migration agents"
+facts    = [
+  "Client & agent portal workflows",
+  "Case tracking & document verification",
+  "REST APIs for web and mobile apps",
+  "Legacy scripts → Laravel, no data loss",
+  "~20% faster page loads",
+  "Worked directly with the founders",
+]
+stack    = "Laravel · Vue.js · REST APIs · MySQL"
+
+# ── Open-source build queue (honestly labelled; update status as work ships) ──
+[[lab]]
+repo   = "laravel-tenancy-kit"
+status = "PLANNED"
+desc   = "Multi-tenant SaaS starter: 3-level scoping, RBAC, approval state machine, Pest, CI"
+[[lab]]
+repo   = "fastapi-rag-gateway"
+status = "PLANNED"
+desc   = "FastAPI service adding tenant-isolated RAG, evals and cost limits to Laravel apps"
+
+[interests]
+items = [
+  ["multi-tenant-saas",     "ACTIVE"],
+  ["scalable-backends",     "ACTIVE"],
+  ["api-performance",       "ACTIVE"],
+  ["database-optimization", "ACTIVE"],
+  ["ai-applications",       "ACTIVE"],
+  ["agentic-workflows",     "EXPLORING"],
+  ["distributed-systems",   "LEARNING"],
+  ["enterprise-software",   "ACTIVE"],
+]
+
+[footer]
+message = "EOF — session closed. thanks for stopping by."

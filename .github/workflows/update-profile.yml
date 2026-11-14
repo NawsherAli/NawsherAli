@@ -1,0 +1,70 @@
+name: update-profile
+
+# Regenerates the profile SVGs and README from real GitHub data.
+#   • daily at 02:17 UTC (07:17 PKT)
+#   • manually (Actions → update-profile → Run workflow)
+#   • when the config, scripts or brand icons change on main
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/profile.toml"
+      - "scripts/**"
+      - "assets/icons/**"
+      - ".github/workflows/update-profile.yml"
+
+# Least privilege: the job only needs to push generated files to this repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Unit tests (no network)
+        env:
+          PROFILE_CI: "1"
+        run: python -m unittest discover -s tests -v
+
+      - name: Fetch GitHub statistics
+        # GITHUB_TOKEN reads public data and the public contribution calendar.
+        # On failure the previous data is kept (the step never breaks the profile).
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_github_stats.py
+
+      - name: Generate SVGs and README
+        run: python scripts/generate_profile_svgs.py
+
+      - name: Validate assets
+        run: python scripts/validate_assets.py
+
+      - name: Commit only if something changed
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "profile-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/github-stats.json assets/generated
+          git commit -m "chore(profile): refresh generated profile [skip ci]"
+          git push
