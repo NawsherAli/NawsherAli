@@ -4,7 +4,7 @@
     "contributions": {
       "end": "2026-11-14",
       "start": "2025-11-16",
-      "total": 2,
+      "total": 4,
       "weeks": [
         [
           0,
@@ -472,18 +472,30 @@
           0,
           0,
           0,
-          2
+          4
         ]
       ]
     },
     "created": "2023-01-26",
-    "followers": 1,
+    "followers": 2,
     "languages": {},
     "last_push": null,
     "login": "NawsherAli",
     "name": "Nawsher Ali",
-    "public_repos": 0,
-    "repos": [],
+    "public_repos": 1,
+    "repos": [
+      {
+        "archived": false,
+        "description": "",
+        "excluded": true,
+        "forks": 0,
+        "language": "Python",
+        "name": "NawsherAli",
+        "pushed": "2026-11-14",
+        "stars": 0,
+        "url": "https://github.com/NawsherAli/NawsherAli"
+      }
+    ],
     "total_stars": 0
   },
   "schema": 1,
