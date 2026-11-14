@@ -219,7 +219,9 @@ def telemetry(cfg, stats, t, slug):
                         "".join(b), t, ANIM_CSS, frame=False, slug=slug)
 
     m = stats["metrics"]
-    tiles = [("PUBLIC REPOS", m["public_repos"], "")]
+    tiles = []
+    if m["public_repos"] >= tele.get("show_repos_min", 0):
+        tiles.append(("PUBLIC REPOS", m["public_repos"], ""))
     c = m.get("contributions")
     if c and c["total"] >= tele["show_contributions_min"]:
         tiles.append(("CONTRIBUTIONS · 52W", c["total"], ""))

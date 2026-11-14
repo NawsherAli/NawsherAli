@@ -70,11 +70,12 @@ value = "685"
 
 [telemetry]
 # Vanity metrics only appear once they pass these thresholds.
+show_repos_min          = 3     # hide "public repos" until there is real public work
 show_stars_min          = 25
 show_followers_min      = 50
 show_contributions_min  = 100
 # Repos never featured or counted in language stats (still counted in "public repos").
-exclude_repos = ["shredbottle", "investo", "dezesitemagniemandzien"]
+exclude_repos = ["NawsherAli", "shredbottle", "investo", "dezesitemagniemandzien"]
 recent_repos_max = 4
 stale_after_days = 3        # mark data as stale if the last successful sync is older
 

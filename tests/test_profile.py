@@ -160,15 +160,20 @@ class TestGenerate(unittest.TestCase):
         c = cfg()
         s = stats_from(FakeClient())                     # 5 stars, 7 followers, 364 contributions
         svg = G.telemetry(c, s, G.THEMES["dark"], "t")
-        self.assertIn("PUBLIC REPOS", svg)
+        self.assertIn("PUBLIC REPOS", svg)                 # synthetic: 3 repos, min 3
         self.assertNotIn("STARS EARNED", svg)
         self.assertNotIn("FOLLOWERS", svg)
         c["telemetry"]["show_stars_min"] = 1
         self.assertIn("STARS EARNED", G.telemetry(c, s, G.THEMES["dark"], "t"))
 
+    def test_public_repos_hidden_below_threshold(self):
+        c = cfg(); c["telemetry"]["show_repos_min"] = 4
+        self.assertNotIn("PUBLIC REPOS", G.telemetry(c, stats_from(FakeClient()), G.THEMES["dark"], "t"))
+
     def test_metrics_match_source(self):
         s = stats_from(FakeClient())
-        svg = G.telemetry(cfg(), s, G.THEMES["dark"], "t")
+        c = cfg(); c["telemetry"]["show_repos_min"] = 0
+        svg = G.telemetry(c, s, G.THEMES["dark"], "t")
         self.assertIn(">3<", svg)                        # public_repos from /users
         self.assertIn(">364<", svg)                      # contributions = 52 weeks × 7 × 1
         self.assertIn("PHP 90%", svg)
