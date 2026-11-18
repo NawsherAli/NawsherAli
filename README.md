@@ -4,7 +4,7 @@
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/hero.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/hero.svg"><img src="assets/generated/dark/hero.svg" alt="Nawsher Ali — Senior Backend &amp; API Architect: PHP Laravel · Python FastAPI · Cloud Microservices · AI Integration"></picture></p>
 
-<p align="center"><a href="#profile"><kbd>SYSTEM</kbd></a> <a href="#telemetry"><kbd>TELEMETRY</kbd></a> <a href="#stack"><kbd>STACK</kbd></a> <a href="#work"><kbd>DEPLOYMENTS</kbd></a> <a href="#lab"><kbd>BUILD</kbd></a> <a href="#interests"><kbd>RESEARCH</kbd></a> <a href="#contact"><kbd>UPLINK</kbd></a></p>
+<p align="center"><a href="#profile"><kbd>SYSTEM</kbd></a> <a href="#telemetry"><kbd>TELEMETRY</kbd></a> <a href="#stack"><kbd>STACK</kbd></a> <a href="#work"><kbd>DEPLOYMENTS</kbd></a> <a href="#lab"><kbd>BUILD</kbd></a> <a href="#activity"><kbd>ACTIVITY</kbd></a> <a href="#interests"><kbd>RESEARCH</kbd></a> <a href="#contact"><kbd>UPLINK</kbd></a></p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/terminal.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/terminal.svg"><img src="assets/generated/dark/terminal.svg" alt="Terminal introduction: whoami → Nawsher Ali — Senior Backend &amp; API Architect; cat focus.txt → Multi-tenant SaaS · REST APIs · AI integration &amp; automation; uptime → nearly 5 years in production · Laravel since 2022; now → building the Mediatiz LMS — 700,000+ students &amp; teachers"></picture></p>
 
@@ -37,13 +37,18 @@
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/lab.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/lab.svg"><img src="assets/generated/dark/lab.svg" alt="Open-source build queue"></picture></p>
 
+<a name="activity"></a>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/h-activity.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/h-activity.svg"><img src="assets/generated/dark/h-activity.svg" alt="06 // ACTIVITY LOG"></picture></p>
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/activity.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/activity.svg"><img src="assets/generated/dark/activity.svg" alt="Contribution activity heatmap"></picture></p>
+
 <a name="interests"></a>
-<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/h-interests.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/h-interests.svg"><img src="assets/generated/dark/h-interests.svg" alt="06 // RESEARCH QUEUE"></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/h-interests.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/h-interests.svg"><img src="assets/generated/dark/h-interests.svg" alt="07 // RESEARCH QUEUE"></picture></p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/interests.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/interests.svg"><img src="assets/generated/dark/interests.svg" alt="Engineering interests"></picture></p>
 
 <a name="contact"></a>
-<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/h-contact.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/h-contact.svg"><img src="assets/generated/dark/h-contact.svg" alt="07 // UPLINK"></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/h-contact.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/h-contact.svg"><img src="assets/generated/dark/h-contact.svg" alt="08 // UPLINK"></picture></p>
 
 <p align="center"><a href="https://www.linkedin.com/in/nawsher-ali-saas-architect/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/btn-linkedin.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/btn-linkedin.svg"><img src="assets/generated/dark/btn-linkedin.svg" alt="LinkedIn profile" width="32%"></picture></a> <a href="mailto:nawsherali.edu@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/btn-email.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/btn-email.svg"><img src="assets/generated/dark/btn-email.svg" alt="Email nawsherali.edu@gmail.com" width="32%"></picture></a> <a href="https://github.com/NawsherAli"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/dark/btn-github.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/light/btn-github.svg"><img src="assets/generated/dark/btn-github.svg" alt="GitHub profile" width="32%"></picture></a></p>
 
