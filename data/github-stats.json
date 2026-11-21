@@ -1,20 +1,11 @@
 {
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-21",
   "metrics": {
     "contributions": {
-      "end": "2026-11-14",
-      "start": "2025-11-16",
-      "total": 1097,
+      "end": "2026-11-21",
+      "start": "2025-11-23",
+      "total": 1080,
       "weeks": [
-        [
-          0,
-          0,
-          0,
-          8,
-          13,
-          7,
-          0
-        ],
         [
           0,
           0,
@@ -473,6 +464,15 @@
           0,
           0,
           8
+        ],
+        [
+          1,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
         ]
       ]
     },
@@ -491,7 +491,7 @@
         "forks": 0,
         "language": "Python",
         "name": "NawsherAli",
-        "pushed": "2026-11-19",
+        "pushed": "2026-11-20",
         "stars": 0,
         "url": "https://github.com/NawsherAli/NawsherAli"
       }
